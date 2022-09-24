@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{ts,tsx,jsx,js}'],
   theme: {
     colors: {
+      white: {
+        DEFAULT: '#ffffff',
+      },
       lemonade: {
         500: '#57E55D',
       },

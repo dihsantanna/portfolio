@@ -15,14 +15,14 @@ Este portfolio foi criado com o intuito de ser simples porém moderno, de forma 
 ## Roadmap :memo:
 Etapas:
 
-- [ ] Criar menu dropdonw para aparelhos mobile de resolução minima de (`375x667`) com os botões `Inicio`, `Sobre` e `Projetos`, `Curriculo`
-- [ ] Criar NavBar com os botões `Inicio`, `Sobre`, `Projetos` e `Curriculo`
-- [ ] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
-- [ ] Criar seção `Inicio`:
-    - [ ] Apresentação com o texto `Olá! Eu Sou Diogo`
-    - [ ] Adicionar minha foto
-    - [ ] Adicionar texto `Desenvolvedor Web FullStack`
-    - [ ] Criar area com meus links do `LinkedIn`, `GitHub` e `Email`
+- [x] Criar menu dropdonw para aparelhos mobile de resolução minima de (`375x667`) com os botões `Inicio`, `Sobre` e `Projetos`, `Curriculo`
+- [x] Criar NavBar com os botões `Inicio`, `Sobre`, `Projetos` e `Curriculo`
+- [x] Criar um `footer` com o texto `Feito com ♥ por Diogo Sant’Anna`
+- [x] Criar seção `Inicio`:
+    - [x] Apresentação com o texto `Olá! Eu Sou Diogo`
+    - [x] Adicionar minha foto
+    - [x] Adicionar texto `Desenvolvedor Web FullStack`
+    - [x] Criar area com meus links do `LinkedIn`, `GitHub` e `Email`
 - [ ] Criar carrousel de stacks
 - [ ] Criar seção `Sobre` contendo um breve texto sobre mim
 - [ ] Criar seção `Projetos`:
