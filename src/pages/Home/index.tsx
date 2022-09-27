@@ -4,11 +4,11 @@ import { ContactMe } from '@src/components/ContactMe';
 
 export function Home() {
   return (
-    <>
+    <div className="flex flex-col justify-between min-h-screen">
       <DropdownMenu />
       <NavBar />
       <div
-        className="w-full md:h-[817px] flex justify-center"
+        className="w-full md:h-[817px] flex justify-center px-3"
       >
         <div className="grid grid-rows-6 justify-center w-full h-full max-w-[1169px] md:grid-cols-2 md:grid-rows-2 lg:grid-rows-3">
           <div className="row-span-2 w-full flex flex-col items-center justify-between md:row-span-1 lg:row-span-2">
@@ -20,7 +20,7 @@ export function Home() {
               >
                 Olá!
                 <br />
-                <span className="text-[#fff]">
+                <span className="text-white">
                   Eu Sou
                 </span> Diogo
               </h1>
@@ -45,6 +45,6 @@ export function Home() {
       </div>
       <CarouselStacks />
       <Footer />
-    </>
+    </div>
   );
 }
