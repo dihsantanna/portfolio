@@ -3,7 +3,7 @@ import { contactMeInfo } from '@src/utils';
 export function ContactMe() {
   return (
     <div
-      className="flex flex-col justify-center items-center md:items-start"
+      className="animate-[leftToRight_1.5s_ease-in-out] flex flex-col justify-center items-center md:items-start"
     >
       <nav
         className="flex flex-col justify-center w-4/5 md:w-5/6"

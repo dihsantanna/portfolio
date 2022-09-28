@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth
+  @apply scroll-smooth;
 }
 
 body {
-  @apply relative min-h-screen font-poppins bg-grafite-900 text-grafite-200;
+  @apply relative min-h-screen font-poppins bg-grafite-900 text-grafite-200 scrollbar-thin scrollbar-thumb-lemonade-500 scrollbar-track-silver-300 scrollbar-thumb-rounded-md;
 }
 
 #root {

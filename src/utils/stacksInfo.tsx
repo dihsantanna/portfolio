@@ -2,21 +2,23 @@ import chaiLogo from '@src/assets/stacks/chai-logo.svg';
 import css3Logo from '@src/assets/stacks/css3-logo.svg';
 import dockerLogo from '@src/assets/stacks/docker-logo.svg';
 import expressLogo from '@src/assets/stacks/express-logo.svg';
+import flaskLogo from '@src/assets/stacks/flask-logo.svg';
 import gitLogo from '@src/assets/stacks/git-logo.svg';
 import html5Logo from '@src/assets/stacks/html5-logo.svg';
-import JSLogo from '@src/assets/stacks/javascript-logo.svg';
+import jsLogo from '@src/assets/stacks/javascript-logo.svg';
 import jestLogo from '@src/assets/stacks/jest-logo.svg';
 import mochaLogo from '@src/assets/stacks/mocha-logo.svg';
 import mongoLogo from '@src/assets/stacks/mongodb-logo.svg';
 import mongooseLogo from '@src/assets/stacks/mongoose-logo.svg';
 import mySqlLogo from '@src/assets/stacks/mysql-logo.svg';
 import nodeLogo from '@src/assets/stacks/nodejs-logo.svg';
+import pyLogo from '@src/assets/stacks/python-logo.svg';
 import reactLogo from '@src/assets/stacks/react-logo.svg';
 import reduxLogo from '@src/assets/stacks/redux-logo.svg';
 import sequelizeLogo from '@src/assets/stacks/sequelize-logo.svg';
 import sinonLogo from '@src/assets/stacks/sinon-logo.svg';
 import tailwindLogo from '@src/assets/stacks/tailwind-logo.svg';
-import TSLogo from '@src/assets/stacks/typescript-logo.svg';
+import tsLogo from '@src/assets/stacks/typescript-logo.svg';
 
 export const stacksInfo = [
   {
@@ -31,7 +33,7 @@ export const stacksInfo = [
   },
   {
     name: 'JavaScript',
-    logo: JSLogo,
+    logo: jsLogo,
     description: <>
       Enquanto HTML e CSS ajudam a criar o design de uma página da web, o <strong>JavaScript</strong> ajuda a criar
       funcionalidade em uma página da web. Outros ambientes que não são de navegador também usam JavaScript
@@ -42,13 +44,22 @@ export const stacksInfo = [
   },
   {
     name: 'TypeScript',
-    logo: TSLogo,
+    logo: tsLogo,
     description: <>
       O <strong>TypeScript</strong> é um superset que serve para potencializar a linguagem JavaScript. Com ele é possível construir
       projetos complexos sem nenhum empecilho. Além disso, ele oferece uma forte tipagem que permite maior desempenho e produtividade
       na hora de executar uma aplicação.
     </>,
     link: 'https://www.typescriptlang.org/',
+  },
+  {
+    name: 'Python',
+    logo: pyLogo,
+    description: <>
+      O <strong>Python</strong> é uma linguagem de programação extremamente simples e versátil, pois, como sua sintaxe é moderna e objetiva,
+      ela foi elaborada para que as pessoas desenvolvedoras escrevam instruções com menos linhas de código.
+    </>,
+    link: 'https://www.python.org/',
   },
   {
     name: 'HTML5',
@@ -115,11 +126,23 @@ export const stacksInfo = [
     name: 'Express',
     logo: expressLogo,
     description: <>
-      O Express é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
+      O <strong>Express</strong> é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
       <br />
       Com uma miríade de métodos utilitários HTTP e middleware a seu dispor, criar uma API robusta é rápido e fácil.
     </>,
     link: 'https://expressjs.com/pt-br/',
+  },
+  {
+    name: 'Flask',
+    logo: flaskLogo,
+    description: <>
+      Lançado em 2010 e desenvolvido por Armin Ronacher, o <strong>Flask</strong> é um micro-framework destinado principalmente a pequenas aplicações com requisitos mais simples,
+      como por exemplo, a criação de um site básico.
+      <br />
+      Possui um núcleo simples e expansível que permite que um projeto possua apenas os recursos necessários para sua execução (conforme surja a necessidade,
+      um novo pacote pode ser adicionado para incrementar as funcionalidades da aplicação).
+    </>,
+    link: 'https://palletsprojects.com/p/flask/',
   },
   {
     name: 'MySQL',

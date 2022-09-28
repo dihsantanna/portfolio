@@ -32,6 +32,26 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],
     },
+    extend: {
+      keyframes: {
+        leftToRight: {
+          '0%': { transform: 'translateX(-20%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        rightToLeft: {
+          '0%': { transform: 'translateX(20%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        bottomToTop: {
+          '0%': { transform: 'translateY(20%)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+        topToBottom: {
+          '0%': { transform: 'translateY(-20%)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+      }
+    }
   },
   plugins: [
     require('@headlessui/react'),
