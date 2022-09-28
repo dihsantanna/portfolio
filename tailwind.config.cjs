@@ -13,7 +13,7 @@ module.exports = {
         500: '#57E55D',
       },
       bluesky: {
-        500: '#2EACBE',
+        500: '#75CFEE',
       },
       grafite: {
         900: '#211D1A',
