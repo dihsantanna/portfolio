@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{ts,tsx,jsx,js}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     colors: {
@@ -17,7 +18,7 @@ module.exports = {
       },
       grafite: {
         900: '#211D1A',
-        700: '#211D1A2B',
+        700: '#211D1A98',
         200: '#9B9B9B',
       },
       silver: {
@@ -33,6 +34,10 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        'ring': '1px 1px 10px 1px rgba(0, 0, 0, 0.3)',
+        'ring-sm': '0.5px 0.5px 5px 0.5px rgba(0, 0, 0, 0.3)'
+      },
       keyframes: {
         leftToRight: {
           '0%': { transform: 'translateX(-20%)', opacity: 0 },
@@ -56,5 +61,6 @@ module.exports = {
   plugins: [
     require('@headlessui/react'),
     require('tailwind-scrollbar')({ nocompatible: true }),
+    require('flowbite/plugin'),
   ],
 };

@@ -84,7 +84,7 @@ export const stacksInfo = [
     link: 'https://kenzie.com.br/blog/css3/',
   },
   {
-    name: 'React',
+    name: 'ReactJS',
     logo: reactLogo,
     description: <>
       O <strong>React</strong> é uma biblioteca JavaScript criada pelo Facebook para o desenvolvimento de aplicações front-end. Ele é baseado em componentes,

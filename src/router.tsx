@@ -1,10 +1,17 @@
+import { lazy, Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import { AboutMe, Home } from './pages';
+import { SpinLoad } from './components';
+import { AboutMe } from './pages';
+
+const Projects = lazy(() => import('./pages/Projects'));
+const Home = lazy(() => import('./pages/Home'));
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Suspense fallback={<SpinLoad />}>
+      <Home />
+    </Suspense>,
   },
   {
     path: 'sobre',
@@ -12,6 +19,8 @@ export const router = createBrowserRouter([
   },
   {
     path: 'projetos',
-    element: <div>Projetos</div>,
+    element: <Suspense fallback={<SpinLoad />}>
+      <Projects />
+    </Suspense>,
   }
 ]);

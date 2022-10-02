@@ -1,6 +1,6 @@
 import { CarouselStacks, ContactMe, DropdownMenu, Footer, Greeting, NavBar } from '@src/components';
 
-export function Home() {
+export default function Home() {
   return (
     <main className="flex flex-col justify-between min-h-screen">
       <DropdownMenu />

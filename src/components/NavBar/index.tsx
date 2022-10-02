@@ -7,7 +7,7 @@ export function NavBar() {
   const {pathname}= useLocation();
   return (
     <nav
-      className="hidden md:flex max-w-[60vw] min-w-[46vw] w-[648px] h-10 fixed right-0 top-[25px] items-center rounded-l-md bg-grafite-700 justify-center"
+      className="hidden md:flex max-w-[60vw] min-w-[46vw] w-[648px] h-10 fixed right-0 top-[25px] items-center rounded-l-md bg-grafite-700 justify-center z-50"
     >
       <section
         className="w-[428px] h-6 flex justify-between items-center"

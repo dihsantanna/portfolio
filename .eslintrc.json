@@ -27,9 +27,20 @@
     "semi": "error",
     "camelcase": "error",
     "spaced-comment": "error",
+    "indent": [
+      "error",
+      2
+    ],
+    "no-multi-spaces": [
+      "error"
+    ],
     "quotes": [
       "error",
       "single"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
     ],
     "no-duplicate-imports": "error"
   },

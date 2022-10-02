@@ -12,5 +12,13 @@ body {
 }
 
 #root {
-  @apply relative min-h-screen;
+  @apply relative min-h-screen scrollbar-thin scrollbar-thumb-lemonade-500 scrollbar-track-silver-300 scrollbar-thumb-rounded-md;
+}
+
+#headlessui-portal-root div {
+  @apply scrollbar-thin scrollbar-thumb-lemonade-500 scrollbar-track-silver-300 scrollbar-thumb-rounded-md;
+}
+
+.button-hover {
+  @apply lg:opacity-95 shadow-ring-sm shadow-bluesky-500 lg:hover:shadow-ring lg:hover:opacity-100 lg:hover:shadow-lemonade-500;
 }

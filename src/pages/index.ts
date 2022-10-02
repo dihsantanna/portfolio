@@ -1,7 +1,9 @@
-import AboutMe from './AbouteMe';
-import { Home } from './Home';
+import { AboutMe } from './AboutMe';
+import Home from './Home';
+import Projects from './Projects';
 
 export {
   AboutMe,
   Home,
+  Projects,
 };
