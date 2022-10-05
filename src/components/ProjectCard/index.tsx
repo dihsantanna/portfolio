@@ -19,6 +19,9 @@ interface ProjectCardProps {
 
 export function ProjectCard({ projectInfo, scrollPosition }: ProjectCardProps) {
   const { title, image } = projectInfo;
+
+  const tenFirstStacks = projectInfo.tags.slice(0, 10);
+
   return (
     <div
       className="animate-[bottomToTop_1s_ease-in-out] col-span-1 bg-white p-3 w-80 h-80 rounded-lg flex flex-col justify-between items-center text-grafite-900 mt-9 shadow-ring-sm shadow-bluesky-500 lg:opacity-[0.94] lg:hover:opacity-100 lg:hover:shadow-lemonade-500 lg:hover:scale-105 lg:transition-all lg:duration-700 lg:hover:shadow-ring"
@@ -32,13 +35,15 @@ export function ProjectCard({ projectInfo, scrollPosition }: ProjectCardProps) {
         scrollPosition={scrollPosition}
         delayTime={1000}
       />
-      <div className="w-full flex justify-end items-end">{projectInfo.tags.map(stackName => (
-        <StackIcon
-          key={stackName}
-          className="ml-2 fill-teal-800 text-lg"
-          stackName={stackName.toLowerCase() as StackName}
-        />
-      ))}</div>
+      <div className="w-full flex justify-end items-end">
+        {tenFirstStacks.map(stackName => (
+          <StackIcon
+            key={stackName}
+            className="ml-2 fill-teal-800 text-lg"
+            stackName={stackName.toLowerCase() as StackName}
+          />
+        ))}
+      </div>
       <div className="w-full flex justify-end items-end px-4 text-silver-300">
         <ProjectDetails
           className="w-max text-center rounded-md bg-grafite-900 px-2 py-1 button-hover"
