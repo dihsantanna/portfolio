@@ -16,6 +16,12 @@ function Projects({ scrollPosition }: ProjectsProps) {
     project.tags.includes(selectedStacks)
   )) : projectsInfo;
 
+  const sortedProjects = filteredProjects.length ? filteredProjects
+    .sort((a, b) => a.title
+      .localeCompare(b.title, 'pt-BR', {
+        sensitivity: 'base', numeric: true
+      })) : null;
+
   return (
     <main
       className="relative flex flex-col justify-between items-center min-h-screen"
@@ -31,8 +37,9 @@ function Projects({ scrollPosition }: ProjectsProps) {
       </div>
       <div className="mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center w-full max-w-[1169px]">
         {
-          filteredProjects.length
-            ? filteredProjects.map((projectInfo, index) => (
+
+          sortedProjects
+            ? sortedProjects.map((projectInfo, index) => (
               <ProjectCard
                 key={`${projectInfo.title}-${index}`}
                 projectInfo={projectInfo}

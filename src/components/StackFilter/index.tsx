@@ -78,38 +78,43 @@ export function StackFilter({ setTask }: StackFilterProps) {
                 )}
               </Listbox.Option>
               {
-                stacksNames.map((stackName, index) => (
-                  <Listbox.Option
-                    key={stackName + (index + 1)}
-                    value={stackName}
-                    disabled={stackName === selectedStack}
-                    className={({ active }) =>
-                      `relative text-base select-none py-2 pl-10 pr-4 ${active ? 'bg-green-200 text-lemonade-500 cursor-pointer' : 'text-grafite-900'
-                      }`
-                    }
-                  >
-                    {({ selected }) => (
-                      <>
-                        <span
-                          className={`flex items-center truncate ${selected ? 'font-medium' : 'font-normal'
-                          }`}
-                        >
-                          <StackIcon
-                            stackName={stackName.toLowerCase() as StackName}
-                            className="text-sm fill-teal-600 mr-2"
-                          />
-                          {stackName}
+                stacksNames
+                  .sort((a, b) => a
+                    .localeCompare(b, 'pt-BR', {
+                      sensitivity: 'base', numeric: true
+                    }))
+                  .map((stackName, index) => (
+                    <Listbox.Option
+                      key={stackName + (index + 1)}
+                      value={stackName}
+                      disabled={stackName === selectedStack}
+                      className={({ active }) =>
+                        `relative text-base select-none py-2 pl-10 pr-4 ${active ? 'bg-green-200 text-lemonade-500 cursor-pointer' : 'text-grafite-900'
+                        }`
+                      }
+                    >
+                      {({ selected }) => (
+                        <>
+                          <span
+                            className={`flex items-center truncate ${selected ? 'font-medium' : 'font-normal'
+                            }`}
+                          >
+                            <StackIcon
+                              stackName={stackName.toLowerCase() as StackName}
+                              className="text-sm fill-teal-600 mr-2"
+                            />
+                            {stackName}
 
-                        </span>
-                        {selected ? (
-                          <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
-                            <FaCheck className="fill-lemonade-500 text-sm" aria-hidden="true" />
                           </span>
-                        ) : null}
-                      </>
-                    )}
-                  </Listbox.Option>
-                ))
+                          {selected ? (
+                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                              <FaCheck className="fill-lemonade-500 text-sm" aria-hidden="true" />
+                            </span>
+                          ) : null}
+                        </>
+                      )}
+                    </Listbox.Option>
+                  ))
               }
             </Listbox.Options>
           </Transition>
