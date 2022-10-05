@@ -1,8 +1,8 @@
 import { Menu, Transition } from '@headlessui/react';
-import dropdownClose from '@src/assets/dropdown-close.svg';
-import dropdownOpen from '@src/assets/dropdown-open.svg';
 import { menuInfos } from '@src/utils';
 import { Fragment } from 'react';
+import { HiMenu } from 'react-icons/hi';
+import { IoMdClose } from 'react-icons/Io';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuInfoKeys } from '../NavBar';
 
@@ -10,7 +10,10 @@ export function DropdownMenu() {
   const { pathname } = useLocation();
   return (
     <nav className="flex fixed right-3 top-3 items-center w-[313px + 30px + 12px] bg-grafite-700 rounded-l-md md:hidden z-10">
-      <Menu>
+      <Menu
+        as="div"
+        className="relative"
+      >
         {({ open }: { open: boolean }) => (
           <>
             <Transition
@@ -21,10 +24,10 @@ export function DropdownMenu() {
               leave="transition duration-300 ease-out"
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
-              className="fixed top-0 left-0 w-screen h-screen bg-grafite-900"
             >
               <Menu.Items
-                className="flex flex-col justify-around w-screen h-screen items-center text-5xl"
+                as="div"
+                className="grid grid-row-4 absolute pt-12 w-32 pb-2 rounded-md bg-grafite-700 border-solid border-[0.01px] border-white -top-4 -right-4"
               >
                 {(Object.keys(menuInfos) as MenuInfoKeys)
                   .map((key) => (
@@ -32,35 +35,38 @@ export function DropdownMenu() {
                       as={Fragment}
                       key={`btn-${menuInfos[key].text}`}
                       disabled={key !== 'curriculum' && pathname === menuInfos[key].path}
-                  >
-                    {key === 'curriculum'
-                      ? <a
-                          className="text-center"
+                    >
+                      {key === 'curriculum'
+                        ? <a
+                          className="row-span-1 text-end rounded-md py-1 pr-5 active:bg-grafite-200"
                           href={menuInfos[key].url}
                           target="_blank"
                           rel="noreferrer"
                         >
                           {menuInfos[key].text}
                         </a>
-                      : <Link
-                          className={`text-center ${pathname === menuInfos[key].path ? 'text-lemonade-500' : ''}`}
+                        : <Link
+                          className={`row-span-1 text-end rounded-md py-1 pr-5 active:bg-teal-800 active:text-lemonade-500 ${pathname === menuInfos[key].path ? 'text-lemonade-500 bg-teal-800' : ''}`}
                           to={menuInfos[key].path}
                         >
                           {menuInfos[key].text}
                         </Link>
-                    }
-                  </Menu.Item>
-                ))}
+                      }
+                    </Menu.Item>
+                  ))}
               </Menu.Items>
             </Transition>
             <Menu.Button
-              className="fixed right-3 top-3 w-11 h-11"
+              className="fixed right-1 top-2 w-8 h-8"
             >
-              <img
-                className="w-11 h-11"
-                src={!open ? dropdownOpen : dropdownClose}
-                alt={`dropdown-${!open ? 'open' : 'close'}`}
-              />
+              {!open
+                ? <HiMenu
+                  className="text-3xl fill-grafite-200"
+                />
+                : <IoMdClose
+                  className="text-3xl fill-grafite-200"
+                />
+              }
             </Menu.Button>
           </>
         )}
