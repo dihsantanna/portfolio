@@ -16,7 +16,7 @@ body {
 }
 
 #headlessui-portal-root div {
-  @apply scrollbar-thin scrollbar-thumb-lemonade-500 scrollbar-track-silver-300 scrollbar-thumb-rounded-md;
+  @apply scrollbar-thin scrollbar-thumb-lemonade-500 scrollbar-track-silver-300 scrollbar-thumb-rounded-md z-50;
 }
 
 .button-hover {

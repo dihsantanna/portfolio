@@ -41,7 +41,7 @@ export function ProjectDetails({ projectInfo, className, textBtn }: ProjectDetai
       >
         <Dialog
           as="div"
-          className="relative z-10"
+          className="relative"
           open={isOpen}
           onClose={closeModal}
         >
@@ -68,7 +68,7 @@ export function ProjectDetails({ projectInfo, className, textBtn }: ProjectDetai
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel
-                  className="flex flex-col justify-between items-center w-screen max-w-[1024px] transform overflow-hidden rounded-2xl bg-white p-3 text-left shadow-ring-sm shadow-bluesky-500 transition-all z-50"
+                  className="flex flex-col justify-between items-center w-screen max-w-[1024px] transform overflow-hidden rounded-2xl bg-white p-3 text-left shadow-ring-sm shadow-bluesky-500 transition-all"
                 >
                   <Dialog.Title
                     className="font-bold text-lg md:text-xl lg:text-2xl self-start text-grafite-900 mb-4"

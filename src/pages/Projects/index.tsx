@@ -49,7 +49,7 @@ function Projects({ scrollPosition }: ProjectsProps) {
       </div>
       <a
         href="#project-page"
-        className="w-16 absolute bottom-7 right-4 text-sm text-lemonade-500 lg:text-grafite-200 lg:hover:text-lemonade-500 lg:transition-colors lg:duration-500 flex flex-col justify-center items-center"
+        className="w-16 fixed bottom-2 right-4 text-sm text-lemonade-500 lg:text-grafite-200 lg:hover:text-lemonade-500 lg:transition-colors lg:duration-500 flex flex-col justify-center items-center z-10"
       >
         <FaArrowAltCircleUp
           className="text-4xl fill-lemonade mb-1"
