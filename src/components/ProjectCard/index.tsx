@@ -21,7 +21,7 @@ export function ProjectCard({ projectInfo, scrollPosition }: ProjectCardProps) {
   const { title, image } = projectInfo;
   return (
     <div
-      className="col-span-1 bg-white p-3 w-80 h-80 rounded-lg flex flex-col justify-between items-center text-grafite-900 mt-9 shadow-ring-sm shadow-bluesky-500 lg:opacity-[0.94] lg:hover:opacity-100 lg:hover:shadow-lemonade-500 lg:hover:scale-105 lg:transition-all lg:duration-700 lg:hover:shadow-ring"
+      className="animate-[bottomToTop_1s_ease-in-out] col-span-1 bg-white p-3 w-80 h-80 rounded-lg flex flex-col justify-between items-center text-grafite-900 mt-9 shadow-ring-sm shadow-bluesky-500 lg:opacity-[0.94] lg:hover:opacity-100 lg:hover:shadow-lemonade-500 lg:hover:scale-105 lg:transition-all lg:duration-700 lg:hover:shadow-ring"
     >
       <h3 className="text-lg text-grafite-900">{title}</h3>
       <LazyLoadImg

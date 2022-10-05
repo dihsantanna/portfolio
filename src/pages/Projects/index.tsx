@@ -23,7 +23,7 @@ function Projects({ scrollPosition }: ProjectsProps) {
     >
       <DropdownMenu />
       <NavBar />
-      <div className="mt-24 mb-6 w-full flex justify-center items-center">
+      <div className="animate-[topToBottom_1s_ease-in-out] mt-24 mb-6 w-full flex justify-center items-center">
         Filtro:
         <StackFilter
           setTask={setSelectedStacks}
@@ -49,7 +49,7 @@ function Projects({ scrollPosition }: ProjectsProps) {
       </div>
       <a
         href="#project-page"
-        className="w-16 absolute bottom-4 right-4 text-sm text-lemonade-500 lg:text-grafite-200 lg:hover:text-lemonade-500 lg:transition-colors lg:duration-500 flex flex-col justify-center items-center"
+        className="w-16 absolute bottom-7 right-4 text-sm text-lemonade-500 lg:text-grafite-200 lg:hover:text-lemonade-500 lg:transition-colors lg:duration-500 flex flex-col justify-center items-center"
       >
         <FaArrowAltCircleUp
           className="text-4xl fill-lemonade mb-1"
