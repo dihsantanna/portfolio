@@ -17,7 +17,7 @@ export function NavBar() {
             .map((key) => (key !== 'curriculum'
               ? <Link
                 className={`${['Inicio', 'Sobre'].includes(menuInfos[key].text) ? 'w-[68px]' : 'w-[92px]'}
-                  text-xl ${pathname === menuInfos[key].path ? 'text-lemonade-500' : 'hover:underline hover:decoration-lemonade-500'} h-6 flex items-center justify-center`}
+                  text-xl ${pathname === menuInfos[key].path ? 'text-lemonade-500' : 'hover:drop-shadow-cloud-lemonade'} h-6 flex items-center justify-center`}
                 to={menuInfos[key].path}
                 key={menuInfos[key].text}
               >
@@ -25,7 +25,7 @@ export function NavBar() {
               </Link>
               : <a
                 key={`link-${menuInfos[key].text}`}
-                className="w-[92px] text-xl hover:underline hover:decoration-lemonade-500 active:text-lemonade-500 h-6 flex items-center justify-center"
+                className="w-[92px] text-xl hover:drop-shadow-cloud-lemonade active:text-lemonade-500 h-6 flex items-center justify-center"
                 href={menuInfos[key].url}
                 target="_blank"
                 rel="noreferrer"

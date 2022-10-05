@@ -38,6 +38,9 @@ module.exports = {
         'ring': '1px 1px 10px 1px rgba(0, 0, 0, 0.3)',
         'ring-sm': '0.5px 0.5px 5px 0.5px rgba(0, 0, 0, 0.3)'
       },
+      dropShadow: {
+        'cloud-lemonade': '0px 1px 4px #57E55D',
+      },
       keyframes: {
         leftToRight: {
           '0%': { transform: 'translateX(-20%)', opacity: 0 },
