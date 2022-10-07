@@ -116,9 +116,8 @@ export function ProjectDetails({ projectInfo, className, textBtn }: ProjectDetai
                         >
                           <StackIcon
                             stackName={stackName.toLowerCase() as StackName}
-                            className="fill-teal-800 text-3xl md:text-[2.5rem] cursor-pointer"
+                            className="fill-teal-800 text-3xl md:text-[2.5rem] cursor-help"
                           />
-
                         </Tooltip>
                       ))}
                     </div>
