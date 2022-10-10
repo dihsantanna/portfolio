@@ -1,40 +1,47 @@
 export const tags = {
+  bootstrap: 'Bootstrap',
+  chai: 'Chai',
+  css3: 'CSS3',
+  cypress: 'Cypress',
+  docker: 'Docker',
+  eslint: 'ESLint',
+  express: 'Express',
+  html5: 'HTML5',
+  javascript: 'JavaScript',
+  mocha: 'Mocha',
+  mySql: 'MySQL',
+  node: 'NodeJS',
+  postgreSql: 'PostgreSQL',
   react: 'ReactJS',
+  redux: 'Redux',
+  sequelize: 'Sequelize',
+  sinon: 'Sinon',
+  typeScript: 'TypeScript',
   vue: 'VueJS',
   vuex: 'Vuex',
-  typeScript: 'TypeScript',
-  node: 'NodeJS',
-  express: 'Express',
-  sequelize: 'Sequelize',
-  bootstrap: 'Bootstrap',
-  docker: 'Docker',
-  mySql: 'MySQL',
-  postgreSql: 'PostgreSQL',
-  html5: 'HTML5',
-  css3: 'CSS3',
-  eslint: 'ESLint',
-  mocha: 'Mocha',
-  chai: 'Chai',
-  sinon: 'Sinon',
 };
 
 export const stacksNames = Object.values(tags);
 
 const {
+  bootstrap,
+  chai,
+  css3,
+  cypress,
+  docker,
+  eslint,
+  express,
+  html5,
+  javascript,
+  mocha,
+  mySql,
+  node,
+  postgreSql,
+  sequelize,
+  sinon,
   typeScript,
   vue,
   vuex,
-  node,
-  express,
-  sequelize,
-  bootstrap,
-  docker,
-  mySql,
-  postgreSql,
-  mocha,
-  chai,
-  sinon,
-  eslint,
 } = tags;
 
 export const projectsInfo = [
@@ -56,5 +63,18 @@ export const projectsInfo = [
     repo: 'https://github.com/dihsantanna/cashforce-fullstack',
     deploy: 'https://cashforce-fullstack.vercel.app/',
     tags: [node, typeScript, express, sequelize, vue, vuex, bootstrap, docker, mySql, postgreSql, mocha, chai, sinon, eslint]
+  },
+  {
+    title: 'Pixels Art - Paleta de Cores',
+    description: <>
+      Neste projeto, foi implementado um editor de arte com pixels. Ou seja, dada uma paleta de cores e um quadro composto por pixels,
+      é possível pintar o que quiser no quadro! Para isto foi utilizado <strong>javascript</strong>, <strong>css</strong> e <strong>html</strong>.
+
+      Para os testes foi utilizado o framework <strong>Cypress</strong>, somente os requisitos <strong>13</strong>, <strong> 14</strong> e <strong > 15</strong > foram escritos por mim.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/project-pixels-art/main/demonstração.gif',
+    repo: 'https://github.com/dihsantanna/project-pixels-art',
+    deploy: 'https://pixels-art-color-pallet.netlify.app/',
+    tags: [javascript, html5, css3, eslint, cypress]
   }
 ];

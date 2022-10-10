@@ -2,6 +2,7 @@ import {
   SiBootstrap,
   SiChai,
   SiCss3,
+  SiCypress,
   SiDocker,
   SiEslint,
   SiExpress,
@@ -22,25 +23,26 @@ import { GrMysql } from 'react-icons/gr';
 import { FaCubes, FaVuejs } from 'react-icons/fa';
 
 export const stacksIcons = {
+  bootstrap: SiBootstrap,
+  chai: SiChai,
+  css3: SiCss3,
+  cypress: SiCypress,
+  docker: SiDocker,
+  default: FaCubes,
+  eslint: SiEslint,
+  express: SiExpress,
+  html5: SiHtml5,
   javascript: SiJavascript,
-  typescript: SiTypescript,
+  mocha: SiMocha,
+  mysql: GrMysql,
+  nodejs: SiNodedotjs,
+  postgresql: SiPostgresql,
   reactjs: SiReact,
   redux: SiRedux,
+  sequelize: SiSequelize,
+  typescript: SiTypescript,
   vuejs: SiVuedotjs,
   vuex: FaVuejs,
-  nodejs: SiNodedotjs,
-  express: SiExpress,
-  sequelize: SiSequelize,
-  bootstrap: SiBootstrap,
-  docker: SiDocker,
-  mysql: GrMysql,
-  postgresql: SiPostgresql,
-  html5: SiHtml5,
-  css3: SiCss3,
-  eslint: SiEslint,
-  mocha: SiMocha,
-  chai: SiChai,
-  sinon: FaCubes
 };
 
 export type StackName = keyof typeof stacksIcons;

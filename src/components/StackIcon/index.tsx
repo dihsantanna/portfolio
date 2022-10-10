@@ -11,7 +11,7 @@ export function StackIcon(
   }: StackIconProps
 ) {
 
-  const Icon = stacksIcons[stackName];
+  const Icon = stacksIcons[stackName] || stacksIcons['default'];
 
   return (
     <>
