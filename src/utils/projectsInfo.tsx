@@ -76,5 +76,16 @@ export const projectsInfo = [
     repo: 'https://github.com/dihsantanna/project-pixels-art',
     deploy: 'https://pixels-art-color-pallet.netlify.app/',
     tags: [javascript, html5, css3, eslint, cypress]
+  },
+  {
+    title: 'Trybewarts',
+    description: <>
+      Um pequeno projeto onde foram desenvolvidos formulários utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.
+      Além do objetivo de exercitar a utilização do flexbox do CSS, os formulários são controlados a partir do DOM utilizando javascript. Foi simulado um formulário de avaliação de satisfação da escola TrybeWarts &#128516;.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/project-trybewarts/main/demonstracao.gif',
+    repo: 'https://github.com/dihsantanna/project-trybewarts',
+    deploy: 'https://project-trybewarts.netlify.app/',
+    tags: [javascript, html5, css3, eslint]
   }
 ];
