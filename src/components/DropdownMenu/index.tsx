@@ -2,7 +2,7 @@ import { Menu, Transition } from '@headlessui/react';
 import { menuInfos } from '@src/utils';
 import { Fragment } from 'react';
 import { HiMenu } from 'react-icons/hi';
-import { IoMdClose } from 'react-icons/Io';
+import { IoClose } from 'react-icons/io5';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuInfoKeys } from '../NavBar';
 
@@ -63,7 +63,7 @@ export function DropdownMenu() {
                 ? <HiMenu
                   className="text-3xl fill-grafite-200"
                 />
-                : <IoMdClose
+                : <IoClose
                   className="text-3xl fill-grafite-200"
                 />
               }
