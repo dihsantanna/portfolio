@@ -23,9 +23,9 @@ Etapas:
     - [x] Adicionar minha foto
     - [x] Adicionar texto `Desenvolvedor Web FullStack`
     - [x] Criar area com meus links do `LinkedIn`, `GitHub` e `Email`
-- [ ] Criar carrousel de stacks
-- [ ] Criar seção `Sobre` contendo um breve texto sobre mim
-- [ ] Criar seção `Projetos`:
-    - [ ] Deve conter um `h1` com o texto `Meus Projetos`
-    - [ ] Uma grade contendo os meus pojetos
-    - [ ] Um botão com o texto `Voltar ao Inicio`
+- [x] Criar carrousel de stacks
+- [x] Criar seção `Sobre` contendo um breve texto sobre mim
+- [x] Criar seção `Projetos`:
+    - [x] Deve conter um `h1` com o texto `Meus Projetos`
+    - [x] Uma grade contendo os meus pojetos
+    - [x] Um botão com o texto `Voltar ao Inicio`
