@@ -18,6 +18,7 @@ import {
   SiReact,
   SiRedux,
   SiSequelize,
+  SiSupabase,
   SiTypescript,
   SiVite,
   SiVuedotjs
@@ -51,6 +52,7 @@ export const stacksIcons = {
   redux: SiRedux,
   sass: FaSass,
   sequelize: SiSequelize,
+  supabase: SiSupabase,
   typescript: SiTypescript,
   vite: SiVite,
   vuejs: SiVuedotjs,

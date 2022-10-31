@@ -22,8 +22,10 @@ export const tags = {
   sass: 'Sass',
   sequelize: 'Sequelize',
   sinon: 'Sinon',
+  supabase: 'Supabase',
   typeScript: 'TypeScript',
   vite: 'Vite',
+  viTest: 'ViTest',
   vue: 'VueJS',
   vuex: 'Vuex',
 };
@@ -54,8 +56,10 @@ const {
   sass,
   sequelize,
   sinon,
+  supabase,
   typeScript,
   vite,
+  viTest,
   vue,
   vuex,
 } = tags;
@@ -125,5 +129,16 @@ export const projectsInfo = [
     repo: 'https://github.com/dihsantanna/webscraper_dev_api',
     deploy: null,
     tags: [python, flask, mongodb, docker, playwright, pyTest],
+  },
+  {
+    title: 'Dog Breed',
+    description: <>
+      Teste técnico realizado para a empresa Q9. Consiste em um site de fotos de cachorros, para ter acesso a lista de imagens é necessário antes registrar um email na pagina de registro.
+      { ' ' } Após o registro você terá acesso ao acervo de imagens que são separadas por raças.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/dog-breed/main/demonstracao.gif',
+    repo: 'https://github.com/dihsantanna/dog-breed',
+    deploy: 'https://dogbreed-00.netlify.app/',
+    tags: [react, typeScript, docker, eslint, vite, viTest, supabase],
   }
 ];
