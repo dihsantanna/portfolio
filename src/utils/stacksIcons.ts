@@ -6,21 +6,26 @@ import {
   SiDocker,
   SiEslint,
   SiExpress,
+  SiFlask,
   SiHtml5,
   SiJavascript,
   SiMocha,
+  SiMongodb,
   SiNodedotjs,
   SiPostgresql,
+  SiPytest,
+  SiPython,
   SiReact,
   SiRedux,
   SiSequelize,
   SiTypescript,
+  SiVite,
   SiVuedotjs
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
 
-import { FaCubes, FaVuejs } from 'react-icons/fa';
+import { FaCubes, FaSass, FaTheaterMasks, FaVuejs } from 'react-icons/fa';
 
 export const stacksIcons = {
   bootstrap: SiBootstrap,
@@ -31,16 +36,23 @@ export const stacksIcons = {
   default: FaCubes,
   eslint: SiEslint,
   express: SiExpress,
+  flask: SiFlask,
   html5: SiHtml5,
   javascript: SiJavascript,
   mocha: SiMocha,
+  mongodb: SiMongodb,
   mysql: GrMysql,
   nodejs: SiNodedotjs,
+  playwright: FaTheaterMasks,
   postgresql: SiPostgresql,
+  pytest: SiPytest,
+  python: SiPython,
   reactjs: SiReact,
   redux: SiRedux,
+  sass: FaSass,
   sequelize: SiSequelize,
   typescript: SiTypescript,
+  vite: SiVite,
   vuejs: SiVuedotjs,
   vuex: FaVuejs,
 };

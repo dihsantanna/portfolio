@@ -6,17 +6,24 @@ export const tags = {
   docker: 'Docker',
   eslint: 'ESLint',
   express: 'Express',
+  flask: 'Flask',
   html5: 'HTML5',
   javascript: 'JavaScript',
   mocha: 'Mocha',
+  mongodb: 'MongoDB',
   mySql: 'MySQL',
   node: 'NodeJS',
+  playwright: 'Playwright',
   postgreSql: 'PostgreSQL',
+  pyTest: 'PyTest',
+  python: 'Python',
   react: 'ReactJS',
   redux: 'Redux',
+  sass: 'Sass',
   sequelize: 'Sequelize',
   sinon: 'Sinon',
   typeScript: 'TypeScript',
+  vite: 'Vite',
   vue: 'VueJS',
   vuex: 'Vuex',
 };
@@ -31,15 +38,24 @@ const {
   docker,
   eslint,
   express,
+  flask,
   html5,
   javascript,
   mocha,
+  mongodb,
   mySql,
   node,
+  playwright,
   postgreSql,
+  pyTest,
+  python,
+  react,
+  redux,
+  sass,
   sequelize,
   sinon,
   typeScript,
+  vite,
   vue,
   vuex,
 } = tags;
@@ -87,5 +103,27 @@ export const projectsInfo = [
     repo: 'https://github.com/dihsantanna/project-trybewarts',
     deploy: 'https://project-trybewarts.netlify.app/',
     tags: [javascript, html5, css3, eslint]
+  },
+  {
+    title: 'Recipes App - Receitate',
+    description: <>
+      Projeto foi realizado em grupo e teve como objetivo exercitar os conhecimentos de <strong>React.js</strong> e <strong>Redux</strong>.
+      { ' ' } A aplicação nada mais é que um app de receitas onde você pode pesquisar receitas de comidas e bebidas e também favorita-las.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/recipes-app/main/demonstracao.gif',
+    repo: 'https://github.com/dihsantanna/recipes-app',
+    deploy: 'https://receitate.netlify.app/',
+    tags: [react, redux, javascript, sass, eslint, docker, vite]
+  },
+  {
+    title: 'Webscraper API',
+    description: <>
+      <strong>Api RESTFul</strong> desenvolvida a partir de dados providos por um <strong>crawler</strong> que faz uma rapagem de dados de um site que simula uma pequena lista de amostra de aparelhos eletrônicos.
+      { ' ' } O crawler está configurado para obter os dados de notebooks da marca lenovo e os ordena do preço mais barato para o mais caro.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/webscraper_dev_api/main/demonstracao.gif',
+    repo: 'https://github.com/dihsantanna/webscraper_dev_api',
+    deploy: null,
+    tags: [python, flask, mongodb, docker, playwright, pyTest],
   }
 ];

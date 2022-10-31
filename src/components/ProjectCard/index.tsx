@@ -4,14 +4,13 @@ import { LazyLoadImg } from '../LazyLoadImg';
 import { StackIcon } from '../StackIcon';
 import { ProjectDetails } from './ProjectDetails';
 
-
 interface ProjectCardProps {
   projectInfo: {
     title: string;
     description: JSX.Element;
     image: string;
     repo: string;
-    deploy?: string;
+    deploy: string | null;
     tags: string[];
   },
   scrollPosition: ScrollPosition;
@@ -30,7 +29,7 @@ export function ProjectCard({ projectInfo, scrollPosition }: ProjectCardProps) {
       <LazyLoadImg
         src={image}
         alt={`Demonstração do projeto ${title}`}
-        className="w-full rounded-md"
+        className="w-full rounded-md max-h-40"
         effect="blur"
         scrollPosition={scrollPosition}
         delayTime={1000}

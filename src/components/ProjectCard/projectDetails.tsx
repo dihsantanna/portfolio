@@ -10,7 +10,7 @@ interface ProjectDetailsProps {
     description: JSX.Element;
     image: string;
     repo: string;
-    deploy?: string;
+    deploy: string | null;
     tags: string[];
   }
   className: string;
@@ -87,7 +87,7 @@ export function ProjectDetails({ projectInfo, className, textBtn }: ProjectDetai
                     className=""
                   >
                     <img
-                      className="w-full mb-8 rounded-lg"
+                      className="max-w-full mb-8 rounded-lg max-h-screen mx-auto"
                       src={image}
                       alt={`Demonstração do projeto ${title}`}
                     />
