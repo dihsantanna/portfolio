@@ -140,5 +140,23 @@ export const projectsInfo = [
     repo: 'https://github.com/dihsantanna/dog-breed',
     deploy: 'https://dogbreed-00.netlify.app/',
     tags: [react, typeScript, docker, eslint, vite, viTest, supabase],
+  },
+  {
+    title: 'Make Your Burger',
+    description: <>
+      Pequeno <strong>CRUD</strong> com autenticação, desenvolvido demonstrando conhecimentos em <strong>VueJS</strong>. A ideia de projeto foi retirado do canal <strong>
+        <a
+          href="https://www.youtube.com/c/MatheusBattisti"
+          target="_blank"
+          rel="noreferrer"
+        >Matheus Battisti - Hora de Codar
+        </a>
+      </strong>
+      , porém foram adicionados alguns toques pessoais como a adição de TypeScript, e um pequeno sistema de autenticação para login de usuário administrador.
+    </>,
+    image: 'https://raw.githubusercontent.com/dihsantanna/make-your-burger/main/demonstracao.gif',
+    repo: 'https://github.com/dihsantanna/make-your-burger',
+    deploy: 'https://make-your-burger-project.vercel.app/',
+    tags: [vue, typeScript, css3, vite, eslint],
   }
 ];
